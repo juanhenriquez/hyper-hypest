@@ -35,7 +35,7 @@ exports.decorateConfig = config => {
     };
   }
 
-  const foreground = isDarkMode ? "#FFFFFF" : "#222222";
+  const foreground = isDarkMode ? "#FFFFFF" : "#0e1112";
   let background;
 
   if (!isDarkMode && !isVibrant) {
@@ -43,9 +43,9 @@ exports.decorateConfig = config => {
   } else if (!isDarkMode && isVibrant) {
     background = `rgba(255, 255, 255, .7)`;
   } else if (isDarkMode && isVibrant) {
-    background = `rgba(0, 0, 0, .4)`;
+    background = `rgba(0, 0, 0, .7)`;
   } else {
-    background = `#222222`;
+    background = `#0e1112`;
   }
 
   let tabBorder, tabActiveBorder, activeTabEdges;
@@ -118,7 +118,7 @@ exports.decorateConfig = config => {
 
   const black = hypest.colors.hasOwnProperty("black")
     ? hypest.colors["black"]
-    : "#222222";
+    : "#0e1112";
   const red = hypest.colors.hasOwnProperty("red")
     ? hypest.colors["red"]
     : "#FF3B30";
